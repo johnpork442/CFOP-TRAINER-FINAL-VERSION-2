@@ -819,8 +819,8 @@ function editCase(step,id){
 /* ================== APRENDIZAJE (sin cronómetro) ================== */
 let aprenderStep = "F2L";
 function imgNameFor(step, id){
-  // Convención de archivo: images/f2l-1.png, images/oll-23.png, images/pll-ja.png
-  return "images/" + step.toLowerCase() + "-" + String(id).toLowerCase().replace(/\s+/g,"") + ".png";
+  // Convención de archivo: f2l-1.png, oll-23.png, pll-ja.png (en la raíz del sitio)
+  return step.toLowerCase() + "-" + String(id).toLowerCase().replace(/\s+/g,"") + ".png";
 }
 function renderAprender(){
   const chipWrap = document.getElementById("aprenderStepChips");
